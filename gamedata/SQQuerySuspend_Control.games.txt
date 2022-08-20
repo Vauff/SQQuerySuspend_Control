@@ -1,0 +1,39 @@
+"Games"
+{
+	"csgo"
+	{
+		"Signatures"
+		{
+			"QueryContinue"
+			{
+				"library"	"vscript"
+				"windows"	"\x55\x8B\xEC\x8B\x45\x08\x83\xEC\x08"
+				"linux"		"\x55\x89\xE5\x53\x83\xEC\x24\x8B\x45\x08"
+			}
+			// qword double (0.03) used in QueryContinue
+			"QueryContinueDb"
+			{
+				"library"	"vscript"
+				"windows"	"\x00\x00\x00\xE0\x51\xB8\x9E\x3F"
+				"linux"		"\x00\x00\x00\xE0\x51\xB8\x9E\x3F"
+			}
+		}
+		"Functions"
+		{
+			"QueryContinue"
+			{
+				"signature"	"QueryContinue"
+				"callconv"	"cdecl"
+				"return"	"int"
+				"this"		"ignore"
+				"arguments"
+				{
+					"hVM"
+					{
+						"type"	"objectptr"
+					}
+				}
+			}
+		}
+	}
+}
