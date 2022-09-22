@@ -8,4 +8,4 @@ At its default value script execution times out after only [0.03s](https://githu
 
 ## Requirements
 
-- A custom SourceMod build with https://github.com/alliedmodders/sourcemod/pull/1826 included (for now?)
+- SourceMod 1.12
